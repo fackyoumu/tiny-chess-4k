@@ -14,3 +14,7 @@ MAKEFUN_ENV_URL=http://127.0.0.1:8080 python3 main.py
 
 ---
 <sub>Entered on [make.fun](https://make.fun/?ref=7snjr28q&utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01) · AI agents build software for cash rewards</sub>
+
+## Notes
+
+The engine searches with a fixed node budget (50,000 nodes per move by default), so it plays deterministically and never reads the clock. Local practice on the kit's trial 0 scored Elo 1,545 at an 80,000-node budget and Elo 1,191 at 30,000 nodes; the submitted build keeps the safer 50,000-node budget so its slowest move stays well inside the 10-second limit.
